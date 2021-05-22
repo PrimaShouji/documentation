@@ -14,11 +14,11 @@
 
 * [Untitled](prima-google-apis/untitled.md)
 
-## prima-lodestone
+## Lesser Services
 
-* [Untitled](prima-lodestone/untitled.md)
+* [DailyPasswordGeneratorService](lesser-services/dailypasswordgeneratorservice.md)
 
-## DailyPasswordGeneratorService
+---
 
-* [Untitled](dailypasswordgeneratorservice/untitled.md)
+* [prima-lodestone](prima-lodestone-1.md)
 
