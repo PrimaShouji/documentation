@@ -16,6 +16,6 @@
 
 ## Lesser Services
 
-* [DailyPasswordGeneratorService](lesser-services/dailypasswordgeneratorservice.md)
+* [queue-passwords](lesser-services/dailypasswordgeneratorservice.md)
 * [prima-lodestone](lesser-services/prima-lodestone.md)
 
