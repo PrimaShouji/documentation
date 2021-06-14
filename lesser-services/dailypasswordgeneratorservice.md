@@ -1,5 +1,5 @@
 ---
-description: Queue password generator.
+description: Low-memory queue password generator.
 ---
 
 # queue-pwgen
