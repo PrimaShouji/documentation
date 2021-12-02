@@ -2,20 +2,6 @@
 
 * [Overview](README.md)
 
-## Prima
+## Common Tasks <a href="#common" id="common"></a>
 
-* [Untitled](prima/untitled.md)
-
-## prima-sentinel
-
-* [Untitled](prima-sentinel/untitled.md)
-
-## prima-google-apis
-
-* [Untitled](prima-google-apis/untitled.md)
-
-## Lesser Services
-
-* [queue-pwgen](lesser-services/dailypasswordgeneratorservice.md)
-* [prima-lodestone](lesser-services/prima-lodestone.md)
-
+* [Role Reactions](common/untitled.md)
