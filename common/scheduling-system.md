@@ -76,6 +76,24 @@ From here, scroll down to the **Integrate calendar** section and copy the text u
 
 ![The relevant address is located at the bottom of this settings section.](../.gitbook/assets/google\_calendar\_integration.png)
 
+###
+
 ## Schedule
 
 Schedule is a legacy system used solely for Baldesion Arsenal scheduling. It is integrated with Google Sheets, and has some more restrictions to reflect the nature of the content. The Announce system's commands are reflections of the Schedule system's commands.
+
+### Understanding scheduling posts
+
+Breakdown of scheduling post format
+
+### Scheduling a run
+
+Some stuff
+
+### Cancelling a run
+
+Some stuff
+
+### Rescheduling a run
+
+Some stuff
