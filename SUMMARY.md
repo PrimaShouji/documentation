@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Overview](README.md)
+* [Prima](README.md)
 
 ## Common Tasks <a href="#common" id="common"></a>
 
