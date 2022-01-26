@@ -52,6 +52,8 @@ This will update both the embed in the schedule channel, and the corresponding e
 
 Image
 
+If you use this command with a run date and time as the first option, and you have multiple events scheduled at that date and time, a prompt will be offered for you to specify which of your events you would like to cancel.
+
 ### Saving community calendars
 
 All calendar links end with a time zone written in their URLs, usually at their end. You can recognize the time zone in a URL by the text `ctz=` immediately preceding it.
