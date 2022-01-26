@@ -78,4 +78,4 @@ From here, scroll down to the **Integrate calendar** section and copy the text u
 
 ## Schedule
 
-Schedule is a legacy system used solely for Baldesion Arsenal scheduling. It's integrated with Google Sheets, and has some more restrictions to reflect the nature of the content. The Announce system's commands are reflections of the Schedule system's commands.
+Schedule is a legacy system used solely for Baldesion Arsenal scheduling. It is integrated with Google Sheets, and has some more restrictions to reflect the nature of the content. The Announce system's commands are reflections of the Schedule system's commands.
