@@ -1,10 +1,8 @@
 # Scheduling System
 
-Prima has not just one, but two scheduling systems: Announce and Schedule.
-
 ## Announce
 
-Announce is used for nearly all schedulable content - Delubrum Reginae, Zadnor, Bozja, and social events. It's integrated with Google Calendar, so you can view upcoming events in your calendar application of choice.
+The announcement system (Announce) is used for nearly all schedulable content - Delubrum Reginae, Zadnor, Bozja, and social events. It's integrated with Google Calendar, so you can view upcoming events in your calendar application of choice.
 
 ### Understanding announcements
 
@@ -61,7 +59,6 @@ For the following commands, the supported progression roles are:
 * Trinity Seeker Progression
 * Queen's Guard Progression
 * Trinity Avowed Progression
-* Stygimoloch Lord Progression
 * The Queen Progression
 
 `~addprogroles FFLogsLink`: Adds progression roles for an entire raid according to the provided FFLogs link. Non-Rolers can also use this command in order to get roles for runs that were done outside of the server.
@@ -132,18 +129,38 @@ From here, scroll down to the **Integrate calendar** section and copy the text u
 
 Schedule is a legacy system used solely for Baldesion Arsenal scheduling. It is integrated with Google Sheets, and has some more restrictions to reflect the nature of the content. The Announce system's commands are reflections of the Schedule system's commands.
 
-### Understanding scheduling posts
+### System restrictions
 
-Breakdown of scheduling post format
+The following restrictions are in place for the legacy scheduling system:
 
-### Scheduling a run
+#### Time blocks
 
-Some stuff
+All events are scheduled to take 3 hours and cannot overlap, due to the fact that concurrent runs are difficult to set up.
 
-### Cancelling a run
+#### Available date range
 
-Some stuff
+Run dates must be within the next 28 days, as that is the number of columns set in the Google Sheet.
 
-### Rescheduling a run
+### Commands
 
-Some stuff
+The Announce system commands are largely simplified versions of this system's commands.
+
+#### Scheduling an event
+
+`~schedule Identifier DateAndTime OptionalMultiplier | Description`: Schedules an event at the specified date and time. `OptionalMultiplier` allows one to schedule multiple time blocks at once, if it is provided. This parameter should be provided as a number with an x before it, such as `x2` to schedule two back-to-back runs, or `x3` to schedule three at once.
+
+`Identifier` is used to specify the run type. Valid options are:
+
+* FR: Fragment/learning runs
+* OP: Ozma progression runs
+* OZ: Ozma clear runs
+* RC: Ozma reclear runs
+* EX: Nonstandard runs
+
+#### Cancelling an event
+
+`~unschedule DateAndTime`: Cancels the event at the provided date and time.
+
+#### Rescheduling an event
+
+`~reschedule CurrentDateAndTime | NewDateAndTime`: Reschedules an event that is currently at the first time, to the second time.
