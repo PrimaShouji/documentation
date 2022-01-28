@@ -44,19 +44,21 @@ Some stuff
 
 To remove an announcement that you have created, use the `~unannounce` command. There are two variants of this command: One which takes the event's date and time, and another which takes your `~announce` command's message ID.
 
-Image
-
 The version of this command that takes your event's date and time works similarly to the `~announce` command. Just use the command, and your event will be updated in the schedule channel and removed from the Google Calendar.
 
-Image
+![](../.gitbook/assets/unannounce\_example\_0.png)
 
 If you've scheduled multiple events at the same date and time, a prompt will be given for you to specify which event you would like to cancel. Simply send the number of the event you would like to cancel in order to continue.
 
-Image
+![](../.gitbook/assets/unannounce\_example\_3.png)
 
-The command can also be used with the message ID of your `~announce` command message:
+To use the message ID variant of this command, use the message ID of your `~announce` message. The message ID of your `~announce` message can be found [right above](scheduling-system.md#understanding-announcements) the announcement.
 
-Image
+![](../.gitbook/assets/unannounce\_example\_2.png)
+
+When an event is cancelled, its corresponding announcement will be updated to show that the event was cancelled. The announcement will then eventually be removed.
+
+![](../.gitbook/assets/unannounce\_example\_1.png)
 
 ### Rescheduling events
 
