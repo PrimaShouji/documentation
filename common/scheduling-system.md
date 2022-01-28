@@ -64,13 +64,15 @@ When an event is cancelled, its corresponding announcement will be updated to sh
 
 To reschedule an event that you have created, use the `~reannounce` command. This takes two options: an identifier for your event (either a date and time or the message ID of your `~announce` command), and the date and time you would like to reschedule your event to.
 
-Image
+![](../.gitbook/assets/reannounce\_example\_0.png)
 
 This will update both the embed in the schedule channel, and the corresponding event in the Google Calendar.
 
-Image
+![](../.gitbook/assets/reannounce\_example\_1.png)
 
-If you use this command with a run date and time as the first option, and you have multiple events scheduled at that date and time, a prompt will be offered for you to specify which of your events you would like to cancel.
+If you use this command with a run date and time as the first option, and you have multiple events scheduled at that date and time, a prompt will be offered for you to specify which of your events you would like to reschedule.
+
+![](../.gitbook/assets/reannounce\_example\_2.png)
 
 ### Saving community calendars
 
