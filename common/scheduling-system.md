@@ -8,13 +8,29 @@ Announce is used for nearly all schedulable content - Delubrum Reginae, Zadnor, 
 
 ### Understanding announcements
 
-Explanation of announcement embed format
+![](../.gitbook/assets/announce\_example\_1.png)
+
+Announcements have the following elements, in this order:
+
+* The message ID of the message used to schedule the event
+* The host of the event
+* The event time, shown in **your system's time zone**
+* The event description, which may be cut off if it's too long
+* A link to copy the event to your calendar, if you don't already have the whole calendar saved
+* A link to the event message
+* The message ID of the message used to schedule the event (again)
+* The event time (again), shown in your system's time zone
+* A button you can press to get a notification half an hour before the event starts
+
+Each announcement channel has its events sorted: the soonest event is at the bottom of the channel, and the event furthest in the future is located at the top of the channel.
 
 ### Announcing events
 
-To announce an event, use `~announce EventDateAndTime | EventDescription` in the appropriate scheduling channel for your event type. Currently, `EventDateAndTime` _must_ be in Pacific Time, with a `MM/DD` date format. Even if you specify a different time zone, your input will be interpreted as PT. This command will create a Discord embed in the corresponding schedule channel, and create an event on the appropriate Google Calendar.
+To announce an event, use `~announce EventDateAndTime | EventDescription` in the appropriate scheduling channel for your event type. Currently, `EventDateAndTime` _must_ be in Pacific Time, with a `MM/DD` date format. Even if you specify a different time zone, your input will be interpreted as PT. Event descriptions can span multiple lines - just press Shift+Enter to create a new line without sending the command. This command will create a Discord embed in the corresponding schedule channel, and create an event on the appropriate Google Calendar.
 
-Image
+![](../.gitbook/assets/announce\_example\_0.png)
+
+![](../.gitbook/assets/announce\_example\_1.png)
 
 If you would like to schedule an event for the following year, extend the date to include the year, in `MM/DD/YYYY` format. If you leave off the year, the bot will assume you are scheduling an event in the current year.
 
