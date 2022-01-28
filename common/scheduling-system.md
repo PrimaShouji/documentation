@@ -34,11 +34,41 @@ To announce an event, use `~announce EventDateAndTime | EventDescription` in the
 
 If you would like to schedule an event for the following year, extend the date to include the year, in `MM/DD/YYYY` format. If you leave off the year, the bot will assume you are scheduling an event in the current year.
 
-30 minutes before your event begins, you and anyone who clicks the notification button on your event's announcement will be DM'd with a reminder that your event is starting soon. As the event host, you will be given the Current Host and Run Pinner roles, which temporarily give you access to additional event commands.
+30 minutes before your event begins, you and anyone who clicks the notification button on your event's announcement will be DM'd with a reminder that your event is starting soon. As the event host, you will be given the **Current Host** and **Run Pinner** roles, which temporarily give you access to additional event commands. If you are hosting a Delubrum Reginae (Savage) run, you will also be given the **Delubrum Roler** role. All of these roles will be granted for 4.5 hours.
 
 #### Event host commands
 
-Some stuff
+`~setroler @User`: Temporarily grants the **Delubrum Roler** and **Run Pinner** roles to the specified user.
+
+`~setpriority @User`: Temporarily makes a user a priority speaker in voice channels. This is useful for raid settings, where it is helpful to make a caller easier to be heard over others.
+
+`~removepriority @User`: Removes priority speaker permissions from a user.
+
+`~mute @User`: Mutes the voice communications of a user for 3 hours, or until they are unmuted.
+
+`~unmute @User`: Unmutes a previously-muted user.
+
+#### Run Pinner commands
+
+`~pin`: Temporarily pins a message in a run channel. You can either provide the message to be pinned as a message link, or you can use the command while using the Reply feature on a message. Messages will be pinned for 4.5 hours.
+
+`~unpin`: Unpins a message that was pinned using the \~pin command.
+
+#### Delubrum Roler commands
+
+For the following commands, the supported progression roles are:
+
+* Trinity Seeker Progression
+* Queen's Guard Progression
+* Trinity Avowed Progression
+* Stygimoloch Lord Progression
+* The Queen Progression
+
+`~addprogroles FFLogsLink`: Adds progression roles for an entire raid according to the provided FFLogs link. Non-Rolers can also use this command in order to get roles for runs that were done outside of the server.
+
+`~addprogrole @User RoleName`: Adds a progression role, and any previous progression roles, to a user. You can also provide multiple users in order to avoid using the command multiple times.
+
+`~removeprogrole @User RoleName`: Removes a progression role from a user. You can also provide multiple users in order to avoid using the command multiple times.
 
 ### Cancelling events
 
