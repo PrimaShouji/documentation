@@ -32,7 +32,9 @@ To announce an event, use `~announce EventDateAndTime | EventDescription` in the
 
 If you would like to schedule an event for the following year, extend the date to include the year, in `MM/DD/YYYY` format. If you leave off the year, the bot will assume you are scheduling an event in the current year.
 
-30 minutes before your event begins, you and anyone who clicks the notification button on your event's announcement will be DM'd with a reminder that your event is starting soon. As the event host, you will be given the **Current Host** and **Run Pinner** roles, which temporarily give you access to additional event commands. If you are hosting a Delubrum Reginae (Savage) run, you will also be given the **Delubrum Roler** role. All of these roles will be granted for 4.5 hours.
+30 minutes before your event begins, you and anyone who clicks the notification button on your event's announcement will be DM'd with a reminder that your event is starting soon.
+
+In addition, 30 minutes before your event begins, you will be given the **Current Host** and **Run Pinner** roles, which will temporarily give you access to additional event commands. If you are hosting a Delubrum Reginae (Savage) run, you will also be given the **Delubrum Roler** role. All of these roles will be granted for 4.5 hours. If you begin preparing a channel for your event more than 30 minutes before your event begins, please be aware that these commands will only be unlocked 30 minutes before your event actually begins.
 
 #### Event host commands
 
