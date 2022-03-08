@@ -24,7 +24,7 @@ Each announcement channel has its events sorted: the soonest event is at the bot
 
 ### Announcing events
 
-To announce an event, use `~announce EventDateAndTime | EventDescription` in the appropriate scheduling channel for your event type. Currently, `EventDateAndTime` must use a `MM/DD` date format. Times are interpreted in Pacific Time by default, but alternative time zones can be specified (see [next section](#time-zones)).
+To announce an event, use `~announce EventDateAndTime | EventDescription` in the appropriate scheduling channel for your event type. Currently, `EventDateAndTime` must use a `MM/DD` date format. Times are interpreted in Pacific Time by default, but alternative time zones can be specified (see [next section](scheduling-system.md#time-zones)).
 
 Event descriptions can span multiple lines - just press Shift+Enter to create a new line without sending the command. This command will create a Discord embed in the corresponding schedule channel, and create an event on the appropriate Google Calendar.
 
@@ -54,7 +54,7 @@ Additionally, you can specify a specific time zone that your input should be rea
 | **PT (Default)** | UTC-8 or UTC-7, following Los Angeles |
 | MST              | UTC-7                                 |
 | MDT              | UTC-6                                 |
-| MT               | UTC-7 or UTC-6, following Phoenix     |
+| MT               | UTC-7 or UTC-6, following Denver      |
 | CST              | UTC-6                                 |
 | CDT              | UTC-5                                 |
 | CT               | UTC-6 or UTC-5, following Chicago     |
