@@ -24,7 +24,7 @@ Each announcement channel has its events sorted: the soonest event is at the bot
 
 ### Announcing events
 
-To announce an event, use `~announce EventDateAndTime | EventDescription` in the appropriate scheduling channel for your event type. Currently, `EventDateAndTime` must use a `MM/DD` date format. Times are interpreted in Pacific Time by default, but alternative time zones can be specified (see [next section](https://karashiiro.gitbook.io/prima/common/scheduling-system#time-zones)).
+To announce an event, use `~announce EventDateAndTime | EventDescription` in the appropriate scheduling channel for your event type. Currently, `EventDateAndTime` must use a `MM/DD` date format. Times are interpreted in Pacific Time by default, but alternative time zones can be specified (see [next section](#time-zones)).
 
 Event descriptions can span multiple lines - just press Shift+Enter to create a new line without sending the command. This command will create a Discord embed in the corresponding schedule channel, and create an event on the appropriate Google Calendar.
 
