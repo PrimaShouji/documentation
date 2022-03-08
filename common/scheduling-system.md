@@ -24,7 +24,7 @@ Each announcement channel has its events sorted: the soonest event is at the bot
 
 ### Announcing events
 
-To announce an event, use `~announce EventDateAndTime | EventDescription` in the appropriate scheduling channel for your event type. Currently, `EventDateAndTime` must use a `MM/DD` date format. Times are interpreted in Pacific Time by default, but alternative time zones can be specified (see next section).
+To announce an event, use `~announce EventDateAndTime | EventDescription` in the appropriate scheduling channel for your event type. Currently, `EventDateAndTime` must use a `MM/DD` date format. Times are interpreted in Pacific Time by default, but alternative time zones can be specified (see [next section](scheduling-system.md#undefined-1)).
 
 Event descriptions can span multiple lines - just press Shift+Enter to create a new line without sending the command. This command will create a Discord embed in the corresponding schedule channel, and create an event on the appropriate Google Calendar.
 
@@ -33,6 +33,12 @@ Event descriptions can span multiple lines - just press Shift+Enter to create a 
 ![](../.gitbook/assets/announce\_example\_1.png)
 
 If you would like to schedule an event for the following year, extend the date to include the year, in `MM/DD/YYYY` format. If you leave off the year, the bot will assume you are scheduling an event in the current year.
+
+30 minutes before your event begins, you and anyone who clicks the notification button on your event's announcement will be DM'd with a reminder that your event is starting soon.
+
+In addition, 30 minutes before your event begins, you will be given the **Current Host** and **Run Pinner** roles, which will temporarily give you access to additional event commands. If you are hosting a Delubrum Reginae (Savage) run, you will also be given the **Delubrum Roler** role. All of these roles will be granted for 4.5 hours. If you begin preparing a channel for your event more than 30 minutes before your event begins, please be aware that these commands will only be unlocked 30 minutes before your event actually begins.
+
+#### Time zones
 
 Additionally, you can specify a specific time zone that your input should be read in. The following time zones are supported:
 
@@ -57,10 +63,6 @@ Additionally, you can specify a specific time zone that your input should be rea
 | ET               | UTC-5 or UTC-4, following New York    |
 
 Additional time zones may be supported on request, assuming their abbreviations do not overlap with an existing supported time zone.
-
-30 minutes before your event begins, you and anyone who clicks the notification button on your event's announcement will be DM'd with a reminder that your event is starting soon.
-
-In addition, 30 minutes before your event begins, you will be given the **Current Host** and **Run Pinner** roles, which will temporarily give you access to additional event commands. If you are hosting a Delubrum Reginae (Savage) run, you will also be given the **Delubrum Roler** role. All of these roles will be granted for 4.5 hours. If you begin preparing a channel for your event more than 30 minutes before your event begins, please be aware that these commands will only be unlocked 30 minutes before your event actually begins.
 
 #### Event host commands
 
