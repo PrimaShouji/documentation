@@ -24,13 +24,39 @@ Each announcement channel has its events sorted: the soonest event is at the bot
 
 ### Announcing events
 
-To announce an event, use `~announce EventDateAndTime | EventDescription` in the appropriate scheduling channel for your event type. Currently, `EventDateAndTime` _must_ be in Pacific Time, with a `MM/DD` date format. Even if you specify a different time zone, your input will be interpreted as PT. Event descriptions can span multiple lines - just press Shift+Enter to create a new line without sending the command. This command will create a Discord embed in the corresponding schedule channel, and create an event on the appropriate Google Calendar.
+To announce an event, use `~announce EventDateAndTime | EventDescription` in the appropriate scheduling channel for your event type. Currently, `EventDateAndTime` must use a `MM/DD` date format. Times are interpreted in Pacific Time by default, but alternative time zones can be specified (see next section).
+
+Event descriptions can span multiple lines - just press Shift+Enter to create a new line without sending the command. This command will create a Discord embed in the corresponding schedule channel, and create an event on the appropriate Google Calendar.
 
 ![](../.gitbook/assets/announce\_example\_0.png)
 
 ![](../.gitbook/assets/announce\_example\_1.png)
 
 If you would like to schedule an event for the following year, extend the date to include the year, in `MM/DD/YYYY` format. If you leave off the year, the bot will assume you are scheduling an event in the current year.
+
+Additionally, you can specify a specific time zone that your input should be read in. The following time zones are supported:
+
+| Time zone        | UTC offset                            |
+| ---------------- | ------------------------------------- |
+| HST              | UTC-10                                |
+| HT               | UTC-10, following Honolulu            |
+| AKST             | UTC-9                                 |
+| AKDT             | UTC-8                                 |
+| AKT              | UTC-9 or UTC-8, following Anchorage   |
+| PST              | UTC-8                                 |
+| PDT              | UTC-7                                 |
+| **PT (Default)** | UTC-8 or UTC-7, following Los Angeles |
+| MST              | UTC-7                                 |
+| MDT              | UTC-6                                 |
+| MT               | UTC-7 or UTC-6, following Phoenix     |
+| CST              | UTC-6                                 |
+| CDT              | UTC-5                                 |
+| CT               | UTC-6 or UTC-5, following Chicago     |
+| EST              | UTC-5                                 |
+| EDT              | UTC-4                                 |
+| ET               | UTC-5 or UTC-4, following New York    |
+
+Additional time zones may be supported on request, assuming their abbreviations do not overlap with an existing supported time zone.
 
 30 minutes before your event begins, you and anyone who clicks the notification button on your event's announcement will be DM'd with a reminder that your event is starting soon.
 
